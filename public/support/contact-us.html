@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="shortcut icon" href="../../images/magixlabnobackground.png" type="image/png">
+    <link rel="stylesheet" href="../../css/contact.css">
+
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="#home" id="navbar__logo">𝙈𝙖𝙜𝙞𝙓 𝙇𝙖𝙗</a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span> 
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="../index.html" class="navbar__links" id="home-page">Return Home</a>
+                </li>
+               
+            </ul>
+        </div>
+    </nav>
+
+    <div class="main">
+        <div id = "vanta-canvas"></div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.144.0/three.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.24/vanta.dots.min.js"></script>
+      
+              
+        <script type="text/javascript">
+            
+        VANTA.DOTS({
+          el: "#vanta-canvas",
+          mouseControls: true,
+          touchControls: true,
+          gyroControls: true,
+          minHeight: 700.00,
+          minWidth: 100.00,
+          scale: 1.00,
+          scaleMobile: 1.00,
+          backgroundColor: 0x111111,
+          points: 9.00,
+          showLines: false
+        })
+        </script>
+        <div class="left">
+            <div class="content">
+                <h1>Contact Us</h1>
+                <p>Need to get in touch with us?<br> Either fill out the form with your query, we
+                    will reach you as soon as possible.</p>
+            </div>
+        </div>
+        <div class="right">
+            <form action="https://formspree.io/f/mjvzylbr" method="POST">
+                <h2>Get in touch</h2>
+                <input type="text" name="Name" placeholder="Enter your name" id="name" class="dataInput" required>
+                <input type="tel" class="dataInput" name="phone" placeholder="Enter phone number" required
+                    id="phonenumber" pattern="{0-9}{10}">
+                <input type="email" name="E-mail" id="email" class="dataInput" placeholder="Enter e-mail" required>
+                <textarea name="message" id="message" class="dataInput" cols="30" fixed rows="7"
+                    placeholder="Enter your message"></textarea>
+                <input type="submit" value="Submit" class="buttonclick" id="submit">
+                
+
+            </form>
+        </div>
+    </div>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1408006177880832" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
