@@ -346,7 +346,7 @@ a {
   padding-bottom: 25px;
   padding-top: 50px;
   margin-bottom: 150px;
-  background-image: url('/images/about_section_background.jpg');
+  background-image: url('about_section_background.jpg');
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
